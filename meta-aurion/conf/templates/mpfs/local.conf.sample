@@ -247,7 +247,7 @@ PACKAGECONFIG:append:pn-qemu-system-native = " sdl"
 # this doesn't mean anything to you.
 CONF_VERSION = "2"
 
-DISTRO ?= "hypersonica"
+DISTRO ?= "aurion"
 
 SERIAL_CONSOLES = "115200;ttyS0"
 SERIAL_CONSOLES_CHECK = "${SERIAL_CONSOLES}"

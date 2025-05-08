@@ -14,6 +14,5 @@ BBLAYERS ?= " \
   ##OEROOT##/../meta-oe/meta-webserver \
   ##OEROOT##/../meta-polarfire-soc-bsp/meta-polarfire-soc-bsp \
   ##OEROOT##/../meta-polarfire-soc-bsp/meta-polarfire-soc-community \
-  ##OEROOT##/../build/workspace \
-  ##OEROOT##/../meta-hypersonica \
+  ##OEROOT##/../meta-aurion \
   "
