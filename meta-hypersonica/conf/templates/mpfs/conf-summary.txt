@@ -1,0 +1,1 @@
+This is the build configuration for the Microchip Polarfire SoC, which supports all its deployments on different electronic boards.

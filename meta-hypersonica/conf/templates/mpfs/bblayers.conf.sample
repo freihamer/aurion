@@ -1,0 +1,19 @@
+# LAYER_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+LCONF_VERSION = "7"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  ##OEROOT##/meta \
+  ##OEROOT##/../meta-oe/meta-oe \
+  ##OEROOT##/../meta-oe/meta-python \
+  ##OEROOT##/../meta-oe/meta-multimedia \
+  ##OEROOT##/../meta-oe/meta-networking \
+  ##OEROOT##/../meta-oe/meta-webserver \
+  ##OEROOT##/../meta-polarfire-soc-bsp/meta-polarfire-soc-bsp \
+  ##OEROOT##/../meta-polarfire-soc-bsp/meta-polarfire-soc-community \
+  ##OEROOT##/../build/workspace \
+  ##OEROOT##/../meta-hypersonica \
+  "
