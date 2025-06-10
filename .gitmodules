@@ -1,16 +1,20 @@
 [submodule "oe-core"]
 	path = oe-core
 	url = git@github.com:openembedded/openembedded-core.git
-	branch = scarthgap
+	branch = kirkstone
 [submodule "meta-oe"]
 	path = meta-oe
 	url = git@github.com:openembedded/meta-openembedded.git
-	branch = scarthgap
+	branch = kirkstone
 [submodule "meta-polarfire-soc-bsp"]
 	path = meta-polarfire-soc-bsp
 	url = git@github.com:polarfire-soc/meta-polarfire-soc-yocto-bsp.git
-	branch = master
+	branch = 2024.09
 [submodule "bitbake"]
 	path = bitbake
 	url = git@github.com:openembedded/bitbake.git
-	branch = master
+	branch = 2.0
+[submodule "meta-enclustra-mpfs"]
+	path = meta-enclustra-mpfs
+	url = git@github.com:enclustra/meta-enclustra-mpfs.git
+	branch = 2024.09
