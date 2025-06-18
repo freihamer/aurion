@@ -1,0 +1,32 @@
+#include "fcc_v1_fabric.dtsi"
+#include <dt-bindings/gpio/gpio.h>
+
+/ {
+	leds {
+		compatible = "gpio-leds";
+
+		led0 {
+			label = "fpga:led0";
+			gpios = <&gpio_led 0 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "heartbeat";
+		};
+
+		led1 {
+			label = "fpga:led1";
+			gpios = <&gpio_led 1 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "activity";
+		};
+
+		led2 {
+			label = "fpga:led2";
+			gpios = <&gpio_led 2 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "none";
+		};
+
+		led3 {
+			label = "fpga:led3";
+			gpios = <&gpio_led 3 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "none";
+		};
+	};
+};
