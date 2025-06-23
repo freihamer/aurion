@@ -18,12 +18,6 @@
 
 &fic3_512m {
 
-	sdio_sel: sdio_sel@0 {
-		compatible = "generic-uio";
-		linux,uio-name = "fic3-sdio-sel";
-		reg = <0x0 0x10>;
-	};
-
 	uart_sel: uart_sel@1000000 {
 		compatible = "microchip,coregpio-rtl-v3";
 		reg = <0x1000000 0x1000>;
@@ -55,4 +49,27 @@
 		gpio-line-names = "FPGA_LED0_N", "FPGA_LED1_N", "FPGA_LED2_N", "FPGA_LED3_N";
 	};
 
+};
+
+&mmuart2 {
+    status = "okay";
+};
+
+&mmuart3 {
+    status = "okay";
+};
+
+&mmuart4 {
+    status = "okay";
+};
+
+
+&gpio2 {
+    status = "okay";
+
+    gpio-line-names = "GPIO_INS_PPS", "GPIO_INS_SYS_WARN", "GPIO_INS_MAINT_MODE", "GPIO_INS_MOUNT_POS1", "GPIO_INS_MOUNT_POS2",
+                      "GPIO_RTX_RFpwr", "GPIO_RTX_ENA", "GPIO_PDU_FAULT_N", "GPIO_PDU_RAT_N", "GPIO_PLS_RESERVED",
+                      "", "", "", "", "", "", "", "", "", "",
+                      "", "", "", "", "", "", "", "", "", "",
+                      "", "", "";
 };

@@ -7,4 +7,3 @@
 /dts-v1/;
 
 #include "enclustra_mercury_mp1.dtsi"
-#include "fcc_v1_baseboard.dtsi"
