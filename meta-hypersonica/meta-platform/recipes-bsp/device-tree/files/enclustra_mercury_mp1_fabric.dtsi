@@ -18,6 +18,12 @@
 
 &fic3_512m {
 
+	uprom_info: uprom_info@0 {
+		compatible = "generic-uio";
+		linux,uio-name = "stratum-info";
+		reg = <0x0 0x100>;
+	};
+
 	uart_sel: uart_sel@1000000 {
 		compatible = "microchip,coregpio-rtl-v3";
 		reg = <0x1000000 0x1000>;
